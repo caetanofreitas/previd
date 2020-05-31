@@ -1,0 +1,54 @@
+header {
+    height: auto;
+    background: #9FC4D0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+header section {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+header section .content h1 {
+    color: #FFF;
+    font-size: 50px;
+}
+
+header section .content p {
+    color: #FFF;
+    font-size: 25px;
+}
+
+.imageBox {
+    width: 500px;
+}
+
+
+.partners {
+    width: 100%;
+    padding: 70px 120px;
+}
+
+.partners  h1 {
+    color: #4E8A9E;
+    font-size: 4rem;
+}
+
+.partnersTable {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnersTable img {
+    height: 150px;
+    margin: 50px 50px;
+}
