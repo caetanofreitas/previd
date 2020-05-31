@@ -3,14 +3,20 @@ import { MdSearch, MdPerson, MdArrowDropDown } from 'react-icons/md';
 import './style.css';
 import logo from 'assets/images/logo.svg';
 import { useHistory } from 'react-router-dom';
+import Dropdown from '../Dropdown'
 
 const NavBar = () => {
     const history = useHistory();
     const [isChallenge, setIsChallenge] = useState(false);
+    const [dropdown, setDropdown] = useState(false)
 
     useEffect(() => {
         setIsChallenge(window.location.pathname === '/challenges' ? true : false);
     }, []);
+
+    function openDropdown(){
+      setDropdown(!dropdown)
+    }
 
     return(
         <div className="header-navbar">
@@ -33,10 +39,11 @@ const NavBar = () => {
                     <li onClick={() => history.push('/challenges') } >
                         Challenges
                     </li>
-                    <li>
+                    <li onClick={openDropdown}>
                         <MdPerson size={30} />
                         Rafa
                         <MdArrowDropDown size={30} />
+                        {dropdown && <Dropdown/>}
                     </li>
                 </ul>
             </nav>

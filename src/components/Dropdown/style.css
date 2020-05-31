@@ -1,0 +1,35 @@
+.dropdown{
+  width: 150px;
+  height: 120px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  margin-top: 80px;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.dropdown ul li{
+  display: block;
+}
+
+.dropdown p{
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.dropdown p+p{
+  border-top: 1px dotted #000;
+}
+
+.dropdown svg{
+  color:#4bd2c4;
+  margin: 0;
+}
