@@ -2,3 +2,9 @@
   margin-top: 160px;
   padding: 0 130px;
 }
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
