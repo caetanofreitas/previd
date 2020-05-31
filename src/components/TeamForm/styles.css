@@ -1,0 +1,63 @@
+.teamform{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.teamform input{
+  background-color: #ECEBEB;
+  outline: none;
+  border: none;
+  height: 50px;
+  font-size: 16px;
+  padding: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px;
+}
+
+.teamform textarea{
+  background-color: #ECEBEB;
+  outline: none;
+  border: none;
+  height: 150px;
+  font-size: 16px;
+  padding: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px;
+  resize: vertical;
+  margin: 30px 0;
+}
+
+#labelImage{
+  border: 1px dashed #ddd;
+  background-size: cover;
+  cursor: pointer;
+  height: 160px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#labelImage p{
+  color: #9B9999;
+}
+
+.inputImage{
+  display: none;
+}
+
+.teamform button{
+  height: 50px;
+  background-color:#303030;
+  color: white;
+  outline: none;
+  border: none;
+  margin: 15px 0;
+  border-radius: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
