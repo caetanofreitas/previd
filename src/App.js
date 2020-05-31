@@ -1,10 +1,13 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from 'store/store';
+import Routes from 'utils/constants/routes';
 
 const App = () => {
   return (
-    <h1>
-      Hey
-    </h1>
+    <Provider store={store} >
+      <Routes />
+    </Provider>
   );
 }
 
