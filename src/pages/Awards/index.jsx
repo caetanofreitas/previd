@@ -18,6 +18,8 @@ const Awards = () => {
           <AwardCard/>
           <AwardCard/>
           <AwardCard/>
+          <AwardCard/>
+          <AwardCard/>
         </div>
       </div>
     </>

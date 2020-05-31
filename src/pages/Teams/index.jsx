@@ -5,6 +5,7 @@ import { MdArrowBack } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
 import Navbar from 'components/Navbar'
+import TeamCard from 'components/TeamCard'
 
 const Teams = () => {
   return(
@@ -16,7 +17,11 @@ const Teams = () => {
           <MdArrowBack color='#759DAA' size={40}/>
         </Link>
         <div className="card-container">
-          
+          <TeamCard/>
+          <TeamCard/>
+          <TeamCard/>
+          <TeamCard/>
+          <TeamCard/>
         </div>
       </div>
     </>
