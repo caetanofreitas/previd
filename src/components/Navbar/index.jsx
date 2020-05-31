@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { MdSearch, MdPerson, MdArrowDropDown } from 'react-icons/md';
 import './style.css';
 import logo from 'assets/images/logo.svg';
@@ -6,6 +6,12 @@ import { useHistory } from 'react-router-dom';
 
 const NavBar = () => {
     const history = useHistory();
+    const [isChallenge, setIsChallenge] = useState(false);
+
+    useEffect(() => {
+        setIsChallenge(window.location.pathname === '/challenges' ? true : false);
+    }, []);
+
     return(
         <div className="header-navbar">
             <img src={logo} alt="Provid" className="logo" onClick={() => history.push('/')} />
@@ -17,8 +23,16 @@ const NavBar = () => {
 
             <nav>
                 <ul>
-                    <li>Be a partner</li>
-                    <li>Challenges</li>
+                    <li>
+                        {
+                            isChallenge ?
+                            'To Submit' :
+                            'Be a partner'
+                        }
+                    </li>
+                    <li onClick={() => history.push('/challenges') } >
+                        Challenges
+                    </li>
                     <li>
                         <MdPerson size={30} />
                         Rafa
