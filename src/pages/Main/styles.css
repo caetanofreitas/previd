@@ -7,6 +7,7 @@ header {
 }
 
 header section {
+    position: relative;
     margin-top: 250px;
     display: flex;
     flex-direction: row;
@@ -51,4 +52,25 @@ header section .content p {
 .partnersTable img {
     height: 150px;
     margin: 50px 50px;
+}
+
+.btnLogin, .btnRegister {
+    font-size: 2rem;
+    padding: 10px 50px;
+    background: none;
+    border: 3px solid #4B4B4B;
+    cursor: pointer;
+    border-radius: 35px;
+    transition: all ease-in .3s;
+    position: absolute;
+    bottom: 15px;
+}
+
+.btnRegister {
+    left: 300px;
+}
+
+.btnLogin:hover, .btnRegister:hover {
+    background: #4B4B4B;
+    color: #FFF;
 }

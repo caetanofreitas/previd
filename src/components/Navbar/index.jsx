@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MdSearch, MdPerson, MdArrowDropDown } from 'react-icons/md';
 import './style.css';
 import logo from 'assets/images/logo.svg';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import Dropdown from '../Dropdown'
 
 const NavBar = () => {
@@ -17,6 +17,11 @@ const NavBar = () => {
     function openDropdown(){
       setDropdown(!dropdown)
     }
+    const { search } = useLocation();
+
+    useEffect(() => {
+        console.log(search);
+    }, [search])
 
     return(
         <div className="header-navbar">
@@ -29,7 +34,13 @@ const NavBar = () => {
 
             <nav>
                 <ul>
-                    <li>
+                    <li 
+                        onClick={() => 
+                            isChallenge ? 
+                            '' :
+                            history.push('/#beapartner')
+                        }
+                    >
                         {
                             isChallenge ?
                             'To Submit' :
