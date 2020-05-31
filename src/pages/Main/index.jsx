@@ -55,7 +55,7 @@ const Main = () => {
                 <div className="partnersTable">
                     {
                         partners.map((e, index) => (
-                            <img src={e} alt={index}/>
+                            <img src={e} alt={index} key={index}/>
                         ))
                     }
                 </div>

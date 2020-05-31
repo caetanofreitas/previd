@@ -10,6 +10,7 @@ const Routes = () => (
         <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/challenges" component={Challenges} />
+            <Route exact path="/challenges?q=%27mychallenge%27" component={Challenges} />
             <Route exact path="/awards" component={Awards} />
         </Switch>
     </BrowserRouter>
