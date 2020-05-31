@@ -37,7 +37,7 @@ const NavBar = () => {
                     <li 
                         onClick={() => 
                             isChallenge ? 
-                            '' :
+                            history.push('/submit') :
                             history.push('/#beapartner')
                         }
                     >
@@ -52,7 +52,7 @@ const NavBar = () => {
                     </li>
                     <li onClick={openDropdown}>
                         <MdPerson size={30} />
-                        Rafa
+                        My Account
                         <MdArrowDropDown size={30} />
                         {dropdown && <Dropdown/>}
                     </li>

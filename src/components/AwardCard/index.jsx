@@ -10,7 +10,7 @@ const AwardCard = () => {
     <div className='awardcard'>
 
       <div className='img-container'>
-        <img src={roupa} />
+        <img src={roupa} alt="roupa" />
       </div>
 
       <button>
