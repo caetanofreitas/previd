@@ -7,7 +7,7 @@ const Dropdown = () => {
   const history = useHistory()
   return(
     <nav className='dropdown'>
-      <p>My Challenges</p>
+      <p onClick={() => history.push('/challenges?q=%27mychallenge%27')}>My Challenges</p>
       <p onClick={()=>history.push('/awards')}><MdAttachMoney/> Points </p>
       <p>Chat</p>
     </nav>
