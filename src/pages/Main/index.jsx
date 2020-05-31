@@ -28,7 +28,7 @@ const Main = () => {
                         </p>
                     </div>
 
-                    <img src={Group} className="imageBox" />
+                    <img src={Group} className="imageBox" alt="Group" />
                 </section>
             </header>
 
