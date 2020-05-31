@@ -4,7 +4,7 @@ import './styles.css'
 
 const PartnerForm = () => {
     return(
-        <div className="FormContainer">
+        <div className="FormContainer" id="beapartner">
             <h1>Become a partner company!</h1>
             <form>
                 <input type="text" placeholder="Name" />
