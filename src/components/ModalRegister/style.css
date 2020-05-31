@@ -1,0 +1,78 @@
+.ModalBack {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+.modalBox {
+    width: 80%;
+    height: 80%;
+    background: #FFFFFF;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form div {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    background: #F1F1F1;
+    border-radius: 16px;
+    box-shadow: 0 3px 6px #00000029;
+    padding: 10px 20px;
+}
+
+.form div input {
+    border: none;
+    background: none;
+    width: 80%;
+    font-size:  32px;
+}
+
+.form div svg {
+    color: #326778;
+    margin-right: 10px;
+}
+
+.form button {
+    width: 50%;
+    background: #326778;
+    color: #FFF;
+    margin-top: 20px;
+    border: none;
+    padding: 10px 0;
+    font-size: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+
+.form button:hover {
+    opacity: .8;
+}
+
+.closeModal {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}

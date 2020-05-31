@@ -1,15 +1,20 @@
 import React from 'react';
-import { MdEmail, MdLock } from 'react-icons/md';
+import { MdEmail, MdLock, MdPerson } from 'react-icons/md';
 import './style.css';
 import Grupo from 'assets/images/Grupo.svg';
 
-const ModalLogin = ({ setOpenLogin, setOpenRegister }) => {
+const ModalRegister = ({ setOpenRegister }) => {
    return(
     <div className="ModalBack" >
         <div className="modalBox" >
             <img src={Grupo} alt="group" />
             
             <div className="form">
+                <div>
+                    <MdPerson size={40} />
+                    <input type="text" placeholder="Name" />
+                </div>
+                
                 <div>
                     <MdEmail size={40} />
                     <input type="text" placeholder="E-mail" />
@@ -21,24 +26,12 @@ const ModalLogin = ({ setOpenLogin, setOpenRegister }) => {
                 </div>
                 
                 <button type="button">
-                    LogIn
+                    Register
                 </button>
-
-                <p>
-                    Not logged in? 
-                    <span
-                        onClick={() => {
-                            setOpenLogin(false);
-                            setOpenRegister(true)
-                        }}
-                    >
-                        Register
-                    </span>
-                </p>
             </div>
 
 
-            <div className="closeModal" onClick={() => setOpenLogin(false) }>
+            <div className="closeModal" onClick={() => setOpenRegister(false) }>
                 X
             </div>
         </div>
@@ -46,4 +39,4 @@ const ModalLogin = ({ setOpenLogin, setOpenRegister }) => {
    );
 }
 
-export default ModalLogin;
+export default ModalRegister;

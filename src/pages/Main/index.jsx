@@ -4,6 +4,7 @@ import NavBar from 'components/Navbar';
 import ListIndex from 'components/ListIndex';
 import PartnerForm from 'components/PartnerForm';
 import ModalLogin from 'components/ModalLogin';
+import ModalRegister from 'components/ModalRegister';
 import Group from 'assets/images/Grupo.svg'
 import './styles.css';
 import Partner1 from 'assets/images/Partner1.svg';
@@ -13,6 +14,7 @@ import Partner4 from 'assets/images/Partner4.svg';
 
 const Main = () => {
     const [openLogin, setOpenLogin] = useState(false);
+    const [openRegister, setOpenRegister] = useState(false);
     const partners = [Partner1, Partner2, Partner3, Partner4];
     return(
         <>
@@ -33,7 +35,7 @@ const Main = () => {
                             Login
                         </button>
 
-                        <button type="button" className="btnRegister">
+                        <button type="button" className="btnRegister" onClick={() => setOpenRegister(true)}>
                             Register
                         </button>
                     </div>
@@ -58,7 +60,8 @@ const Main = () => {
                     }
                 </div>
             </section>
-            {openLogin && <ModalLogin setOpenLogin={setOpenLogin} />}
+            {openLogin && <ModalLogin setOpenLogin={setOpenLogin} setOpenRegister={setOpenRegister} />}
+            {openRegister && <ModalRegister setOpenRegister={setOpenRegister} />}
         </>
     );
 }
