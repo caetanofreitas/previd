@@ -1,0 +1,124 @@
+.SubmitContainer {
+    min-height: calc(100vh - 100px);
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 230px 50px 0 200px;
+}
+
+.imageContainer {
+    position: relative;
+    border-radius: 50%;
+}
+
+.addPhotoIcon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.infos {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.infos h1 {
+    font-size: 40px;
+    color: #676767;
+    margin-right: 15px;
+}
+
+.infos p {
+    font-size: 30px;
+    color: #8A8A8A;
+    margin: 30px 0;
+    max-width: 995px;
+}
+
+
+.infos ul {
+    list-style:  none;
+    display: grid;
+    grid-template-columns: 2;
+}
+
+.infos ul li {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.infos ul li img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+.actionTitle {
+    color: #6B6666;
+    font-size: 3rem;
+    margin-left: 155px;
+}
+
+.textEditor {
+    margin: 50px 0;
+    margin-left: 145px;
+    width: 90%;
+    max-width: 950px;
+    height: auto;
+    min-height: 570px;
+    border: 1px solid #484848;
+    border-radius: 34px;
+}
+
+.textEditor header {
+    height: 96px;
+    width: 100%;
+    background: #303030;
+    border-radius: 34px 34px 0 0;
+}
+
+.textEditor header div {
+    border-radius: 34px 34px 0 0;
+    display: flex;
+    padding: 30px 0 0 30px;
+}
+
+.textEditor header div svg {
+    color: #9FC4D0;
+    margin: 0 10px;
+
+}
+
+.textEditor header div svg:first-child {
+    transform: rotate(90deg);
+}
+
+.textEditor footer {
+    height: 118px;
+    width: 100%;
+    background: #C7C7C7;
+    border-radius: 0 0 34px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.textEditor footer button {
+    font-size: 30px;
+    padding: 15px 30px;
+    background: #326778;
+    border: none;
+    border-radius: 28px;
+    color: #FFF;
+    margin-right: 30px;
+}
+
+.textEditor textarea {
+    padding: 39px 44px;
+    height: auto;
+    width: 100%;
+    min-height: 356px;
+    font-size: 30px;
+    border: none;
+}
