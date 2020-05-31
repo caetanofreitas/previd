@@ -1,0 +1,65 @@
+.challenge-container{
+  margin-top: 160px;
+  padding: 0 130px;
+}
+
+.challenge-description{
+  display: flex;
+  justify-content: space-around;
+}
+
+.challenge-description img{
+  height: 250px;
+  margin: 30px 0;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.main-container p{
+  color:#8A8A8A;
+}
+
+.team-button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-button-container button {
+  font-size: 1.8rem;
+  padding: 15px 20px;
+  background: none;
+  border: 3px solid #4B4B4B;
+  border-radius: 20px ;
+  cursor: pointer;
+  transition: all ease-in .25s;
+  margin: 0 15px;
+}
+
+.team-button-container button:hover {
+  color: #F6F2F2;
+  background: #4B4B4B;
+}
+
+.team-button-container button+button{
+  font-size: 1.8rem;
+  padding: 15px 20px;
+  background: #9FC4D0;
+  border: 3px solid #9FC4D0;
+  border-radius: 20px ;
+  cursor: pointer;
+  transition: all ease-in .25s;
+  color: #F6F2F2;
+}
+
+.team-button-container button:hover {
+  color: #F6F2F2;
+  background: #9FC4D0;
+  border: 3px solid #9FC4D0;
+  filter: brightness(0.9);
+}
