@@ -1,0 +1,18 @@
+.btnGroup {
+    margin-top: 200px;
+    margin-left: 160px;
+}
+
+.btnGroup button {
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 50px 50px 0 0;
+    padding: 27px 30px;
+    background: #ECEBEB;
+    color: #B4B4B4;
+}
+
+button.selected {
+    background: #5D9CB1;
+    color: #E2E2E2;
+}
