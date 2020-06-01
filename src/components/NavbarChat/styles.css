@@ -1,0 +1,36 @@
+.chat-navbar{
+  height: 100vh;
+  width: 300px;
+  background: #383E40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.inputBox {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.inputBox input {
+  height: 100%;
+  font-size: 1.8rem;
+  border: none;
+  background: none;
+}
+
+.user{
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F3F3F3;
+  font-size: 30px;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid #616161;
+}
