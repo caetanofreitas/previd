@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles.css'
 
 import { MdArrowBack } from 'react-icons/md'
-import { Link } from 'react-router-dom'
+import { Link,useHistory } from 'react-router-dom'
 
 import Navbar from 'components/Navbar'
 import TeamForm from 'components/TeamForm'
@@ -10,6 +10,8 @@ import TeamForm from 'components/TeamForm'
 import group from 'assets/images/Grupo.svg'
 
 const Challenge = ({match}) => {
+  const history = useHistory()
+  const [display, setDisplay] = useState(false)
   console.log(match.params.id)
   return(
     <>
@@ -31,13 +33,13 @@ const Challenge = ({match}) => {
               remaining essentially unchanged.
             </p>
             <div className="team-button-container">
-              <button>Create Team</button>
-              <button>Join Team</button>
+              <button onClick={()=>setDisplay(!display)}>Create Team</button>
+              <button onClick={()=>history.push('/submit')}>Join Team</button>
             </div>
           </div>
         </div>
 
-        <TeamForm/>
+        { display && <TeamForm/> }
       </div>
     </>
   )
