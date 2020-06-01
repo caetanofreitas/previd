@@ -1,0 +1,58 @@
+main{
+  display: flex;
+}
+
+.chat-container{
+  height: 100vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-images{
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid #000;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.user-container{
+  height: 200px;
+  width: 250px;
+  border-radius: 15px;
+  background: #F1CEAC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-container+.user-container{
+  background: #5D9CB1;  
+}
+
+.user-container img{
+  height: 150px;
+}
+
+.messages{
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  flex-direction: column-reverse;
+}
+
+.message{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.message img{
+  height: 50px;
+  width: 50px;
+}
+
+.textmessage-container{
+  margin-left: 10px;
+}

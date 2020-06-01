@@ -21,7 +21,7 @@ const Challenge = ({match}) => {
         </Link>
 
         <div className='challenge-description'>
-          <img src={group} alt="group" />
+          <img src={group} alt='group'/>
           <div className="main-container">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
