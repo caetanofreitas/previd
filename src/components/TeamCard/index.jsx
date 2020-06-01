@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles.css'
 
-const TeamCard = () => {
-
+const TeamCard = ({ setAlert, alert  }) => {
+  
   const getRandomColor = () => {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -15,7 +15,7 @@ const TeamCard = () => {
   return(
     <div style={{backgroundColor:getRandomColor()}} className="teamcard">
       <div>
-        <label>Team name</label> <button>Join</button>
+        <label>Team name</label> <button onClick={() => setAlert(true)}>Join</button>
       </div>
     </div>
   )
