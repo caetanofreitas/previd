@@ -7,6 +7,7 @@ import Challenge from 'pages/Challenge'
 import Awards from 'pages/Awards'
 import Teams from 'pages/Teams'
 import Chat from 'pages/Chat'
+import Submit from 'pages/Submit'
 
 const Routes = () => (
     <BrowserRouter>
@@ -18,6 +19,7 @@ const Routes = () => (
             <Route exact path="/awards" component={Awards} />
             <Route exact path="/teams/:id" component={Teams} />
             <Route exact path="/chat/:id" component={Chat} />
+            <Route exact path="/submit" component={Submit} />
         </Switch>
     </BrowserRouter>
 );

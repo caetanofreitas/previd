@@ -18,7 +18,7 @@
 
 .inputBox {
     width: 40%;
-    max-width: 400px;
+    max-width: 600px;
     height: 50px;
     background: #FFF;
     border-radius: 1.5rem;
@@ -29,7 +29,7 @@
 
 .inputBox input {
     flex: 1;
-    max-width: 500px;
+    max-width: 600px;
     margin-right: 1.5rem;
     height: 100%;
     font-size: 1.8rem;
